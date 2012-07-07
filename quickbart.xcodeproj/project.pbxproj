@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		280E754E0DD40C5E005A515E /* DeparturesGrid.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* DeparturesGrid.xib */; };
+		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
+		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
+		289233AE0DB2D0DB0083E9F9 /* DeparturesGridVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* DeparturesGridVC.m */; };
+		5F00F7F412D2B30200C51C92 /* BARTRequestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F00F7F312D2B30200C51C92 /* BARTRequestor.m */; };
+		5F32149412CA701E00CF58D3 /* StationPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F32149212CA701E00CF58D3 /* StationPickerVC.m */; };
+		5F32149512CA701E00CF58D3 /* StationPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F32149312CA701E00CF58D3 /* StationPickerVC.xib */; };
+		5F32155112CAAFD700CF58D3 /* StationEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F32154F12CAAFD700CF58D3 /* StationEditorVC.m */; };
+		5F32155212CAAFD700CF58D3 /* StationEditorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F32155012CAAFD700CF58D3 /* StationEditorVC.xib */; };
+		5F32155B12CAB0E100CF58D3 /* StationDeparturePref.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F32155A12CAB0E100CF58D3 /* StationDeparturePref.m */; };
+		5F32155E12CAB2D100CF58D3 /* BARTStationsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F32155D12CAB2D100CF58D3 /* BARTStationsUtil.m */; };
+		5F3215F312CABC6300CF58D3 /* StationPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3215F212CABC6300CF58D3 /* StationPrefs.m */; };
+		5F4E4E6C12BEE57F00F9F587 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4E4E6B12BEE57F00F9F587 /* QuartzCore.framework */; };
+		5F5717EE12BE875300676EA7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5717EC12BE875300676EA7 /* Icon.png */; };
+		5F5717EF12BE875300676EA7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5717ED12BE875300676EA7 /* Icon@2x.png */; };
+		5F58414C12BC3DA700D4E196 /* TransitStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F58414B12BC3DA700D4E196 /* TransitStation.m */; };
+		5F58414F12BC3E2600D4E196 /* TransitDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F58414E12BC3E2600D4E196 /* TransitDestination.m */; };
+		5F58415212BC3E5500D4E196 /* BARTDepartureEstimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F58415112BC3E5500D4E196 /* BARTDepartureEstimate.m */; };
+		5F58416412BC4CF200D4E196 /* BARTResponseProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F58416312BC4CF200D4E196 /* BARTResponseProcessor.m */; };
+		5F9C6EF512BDBE7800C6B91E /* etd-NBRK.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5F9C6E3B12BDBA1600C6B91E /* etd-NBRK.xml */; };
+		5F9C782212EBE4A40057BDDE /* NoDeparturesPlaceholderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9C782112EBE4A40057BDDE /* NoDeparturesPlaceholderView.xib */; };
+		5FBCC2A912F6451F00773293 /* DepartureExpansionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBCC2A812F6451F00773293 /* DepartureExpansionView.xib */; };
+		5FBCC2E212F6488600773293 /* DetailsExpansionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCC2E112F6488600773293 /* DetailsExpansionView.m */; };
+		5FBCC4DD12F733E400773293 /* etd-ALL.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5FBCC4DC12F733E400773293 /* etd-ALL.xml */; };
+		5FBD28EC12CED351009277C0 /* SliderDisplayControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD28EB12CED351009277C0 /* SliderDisplayControl.m */; };
+		5FC1128712D931200044AB1D /* train_icons in Resources */ = {isa = PBXBuildFile; fileRef = 5FC1127C12D931200044AB1D /* train_icons */; };
+		5FC112F712D937840044AB1D /* TrainDepartureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC112F612D937840044AB1D /* TrainDepartureView.m */; };
+		5FD267FA12CC33F8004ECBA8 /* DepartureSummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD267F912CC33F8004ECBA8 /* DepartureSummaryView.m */; };
+		5FF9396E12DD4F400039C7B7 /* DepartureDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9396D12DD4F400039C7B7 /* DepartureDetailDataSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* quickbart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickbart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		280E754B0DD40C5E005A515E /* DeparturesGrid.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeparturesGrid.xib; sourceTree = "<group>"; };
+		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		289233A80DB2D0DB0083E9F9 /* DeparturesGridVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeparturesGridVC.h; path = Classes/DeparturesGridVC.h; sourceTree = "<group>"; };
+		289233A90DB2D0DB0083E9F9 /* DeparturesGridVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeparturesGridVC.m; path = Classes/DeparturesGridVC.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* quickbart_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quickbart_Prefix.pch; sourceTree = "<group>"; };
+		5F00F7F212D2B30200C51C92 /* BARTRequestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BARTRequestor.h; path = Classes/model/BARTRequestor.h; sourceTree = "<group>"; };
+		5F00F7F312D2B30200C51C92 /* BARTRequestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BARTRequestor.m; path = Classes/model/BARTRequestor.m; sourceTree = "<group>"; };
+		5F32149112CA701E00CF58D3 /* StationPickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StationPickerVC.h; path = Classes/StationPickerVC.h; sourceTree = "<group>"; };
+		5F32149212CA701E00CF58D3 /* StationPickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StationPickerVC.m; path = Classes/StationPickerVC.m; sourceTree = "<group>"; };
+		5F32149312CA701E00CF58D3 /* StationPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StationPickerVC.xib; path = Classes/StationPickerVC.xib; sourceTree = "<group>"; };
+		5F32154E12CAAFD700CF58D3 /* StationEditorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StationEditorVC.h; path = Classes/StationEditorVC.h; sourceTree = "<group>"; };
+		5F32154F12CAAFD700CF58D3 /* StationEditorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StationEditorVC.m; path = Classes/StationEditorVC.m; sourceTree = "<group>"; };
+		5F32155012CAAFD700CF58D3 /* StationEditorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StationEditorVC.xib; path = Classes/StationEditorVC.xib; sourceTree = "<group>"; };
+		5F32155912CAB0E100CF58D3 /* StationDeparturePref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StationDeparturePref.h; path = Classes/model/StationDeparturePref.h; sourceTree = "<group>"; };
+		5F32155A12CAB0E100CF58D3 /* StationDeparturePref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StationDeparturePref.m; path = Classes/model/StationDeparturePref.m; sourceTree = "<group>"; };
+		5F32155C12CAB2D100CF58D3 /* BARTStationsUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BARTStationsUtil.h; path = Classes/model/BARTStationsUtil.h; sourceTree = "<group>"; };
+		5F32155D12CAB2D100CF58D3 /* BARTStationsUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BARTStationsUtil.m; path = Classes/model/BARTStationsUtil.m; sourceTree = "<group>"; };
+		5F3215F112CABC6300CF58D3 /* StationPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StationPrefs.h; path = Classes/model/StationPrefs.h; sourceTree = "<group>"; };
+		5F3215F212CABC6300CF58D3 /* StationPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StationPrefs.m; path = Classes/model/StationPrefs.m; sourceTree = "<group>"; };
+		5F4E4E6B12BEE57F00F9F587 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5F5717EC12BE875300676EA7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5F5717ED12BE875300676EA7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		5F58414A12BC3DA700D4E196 /* TransitStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitStation.h; path = Classes/model/TransitStation.h; sourceTree = "<group>"; };
+		5F58414B12BC3DA700D4E196 /* TransitStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransitStation.m; path = Classes/model/TransitStation.m; sourceTree = "<group>"; };
+		5F58414D12BC3E2600D4E196 /* TransitDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitDestination.h; path = Classes/model/TransitDestination.h; sourceTree = "<group>"; };
+		5F58414E12BC3E2600D4E196 /* TransitDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransitDestination.m; path = Classes/model/TransitDestination.m; sourceTree = "<group>"; };
+		5F58415012BC3E5500D4E196 /* BARTDepartureEstimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARTDepartureEstimate.h; sourceTree = "<group>"; };
+		5F58415112BC3E5500D4E196 /* BARTDepartureEstimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BARTDepartureEstimate.m; sourceTree = "<group>"; };
+		5F58416212BC4CF200D4E196 /* BARTResponseProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BARTResponseProcessor.h; path = Classes/model/BARTResponseProcessor.h; sourceTree = "<group>"; };
+		5F58416312BC4CF200D4E196 /* BARTResponseProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BARTResponseProcessor.m; path = Classes/model/BARTResponseProcessor.m; sourceTree = "<group>"; };
+		5F9C6E3B12BDBA1600C6B91E /* etd-NBRK.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "etd-NBRK.xml"; path = "Classes/modelTests/etd-NBRK.xml"; sourceTree = "<group>"; };
+		5F9C782112EBE4A40057BDDE /* NoDeparturesPlaceholderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDeparturesPlaceholderView.xib; sourceTree = "<group>"; };
+		5FBCC2A812F6451F00773293 /* DepartureExpansionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartureExpansionView.xib; sourceTree = "<group>"; };
+		5FBCC2E012F6488600773293 /* DetailsExpansionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsExpansionView.h; path = Classes/DetailsExpansionView.h; sourceTree = "<group>"; };
+		5FBCC2E112F6488600773293 /* DetailsExpansionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsExpansionView.m; path = Classes/DetailsExpansionView.m; sourceTree = "<group>"; };
+		5FBCC4DC12F733E400773293 /* etd-ALL.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "etd-ALL.xml"; path = "Classes/modelTests/etd-ALL.xml"; sourceTree = "<group>"; };
+		5FBD28EA12CED351009277C0 /* SliderDisplayControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SliderDisplayControl.h; path = Classes/SliderDisplayControl.h; sourceTree = "<group>"; };
+		5FBD28EB12CED351009277C0 /* SliderDisplayControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SliderDisplayControl.m; path = Classes/SliderDisplayControl.m; sourceTree = "<group>"; };
+		5FC1127C12D931200044AB1D /* train_icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = train_icons; path = res/train_icons; sourceTree = "<group>"; };
+		5FC112F512D937840044AB1D /* TrainDepartureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrainDepartureView.h; path = Classes/TrainDepartureView.h; sourceTree = "<group>"; };
+		5FC112F612D937840044AB1D /* TrainDepartureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrainDepartureView.m; path = Classes/TrainDepartureView.m; sourceTree = "<group>"; };
+		5FD267F812CC33F8004ECBA8 /* DepartureSummaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DepartureSummaryView.h; path = Classes/DepartureSummaryView.h; sourceTree = "<group>"; };
+		5FD267F912CC33F8004ECBA8 /* DepartureSummaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DepartureSummaryView.m; path = Classes/DepartureSummaryView.m; sourceTree = "<group>"; };
+		5FF9396C12DD4F400039C7B7 /* DepartureDetailDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DepartureDetailDataSource.h; path = Classes/model/DepartureDetailDataSource.h; sourceTree = "<group>"; };
+		5FF9396D12DD4F400039C7B7 /* DepartureDetailDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DepartureDetailDataSource.m; path = Classes/model/DepartureDetailDataSource.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* quickbart-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "quickbart-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
+				5F4E4E6C12BEE57F00F9F587 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = "Application Delegate";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* quickbart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		289233A00DB2D0730083E9F9 /* DeparturesGrid */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C782112EBE4A40057BDDE /* NoDeparturesPlaceholderView.xib */,
+				280E754B0DD40C5E005A515E /* DeparturesGrid.xib */,
+				289233A80DB2D0DB0083E9F9 /* DeparturesGridVC.h */,
+				289233A90DB2D0DB0083E9F9 /* DeparturesGridVC.m */,
+				5FF9396C12DD4F400039C7B7 /* DepartureDetailDataSource.h */,
+				5FF9396D12DD4F400039C7B7 /* DepartureDetailDataSource.m */,
+			);
+			name = DeparturesGrid;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCC2DF12F6481A00773293 /* DepartureExpansionView */,
+				5F0B9AFA12CC31520046CCF8 /* DepartureViewCell */,
+				5F32155312CAAFE200CF58D3 /* StationEditor */,
+				5F32148312CA6ECC00CF58D3 /* StationPicker */,
+				5F58414912BC3D0800D4E196 /* model */,
+				289233A00DB2D0730083E9F9 /* DeparturesGrid */,
+				080E96DDFE201D6D7F000001 /* Application Delegate */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* quickbart_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCC4DC12F733E400773293 /* etd-ALL.xml */,
+				5FC1127C12D931200044AB1D /* train_icons */,
+				5F5717EC12BE875300676EA7 /* Icon.png */,
+				5F5717ED12BE875300676EA7 /* Icon@2x.png */,
+				5F9C6E3B12BDBA1600C6B91E /* etd-NBRK.xml */,
+				280E754C0DD40C5E005A515E /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* quickbart-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765580DF743DE002DB57D /* CoreGraphics.framework */,
+				5F4E4E6B12BEE57F00F9F587 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F0B9AFA12CC31520046CCF8 /* DepartureViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5FD267F812CC33F8004ECBA8 /* DepartureSummaryView.h */,
+				5FD267F912CC33F8004ECBA8 /* DepartureSummaryView.m */,
+				5FC112F512D937840044AB1D /* TrainDepartureView.h */,
+				5FC112F612D937840044AB1D /* TrainDepartureView.m */,
+			);
+			name = DepartureViewCell;
+			sourceTree = "<group>";
+		};
+		5F32148312CA6ECC00CF58D3 /* StationPicker */ = {
+			isa = PBXGroup;
+			children = (
+				5F32149112CA701E00CF58D3 /* StationPickerVC.h */,
+				5F32149212CA701E00CF58D3 /* StationPickerVC.m */,
+				5F32149312CA701E00CF58D3 /* StationPickerVC.xib */,
+			);
+			name = StationPicker;
+			sourceTree = "<group>";
+		};
+		5F32155312CAAFE200CF58D3 /* StationEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5FBD28EA12CED351009277C0 /* SliderDisplayControl.h */,
+				5FBD28EB12CED351009277C0 /* SliderDisplayControl.m */,
+				5F32154E12CAAFD700CF58D3 /* StationEditorVC.h */,
+				5F32154F12CAAFD700CF58D3 /* StationEditorVC.m */,
+				5F32155012CAAFD700CF58D3 /* StationEditorVC.xib */,
+			);
+			name = StationEditor;
+			sourceTree = "<group>";
+		};
+		5F58414912BC3D0800D4E196 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5F58414A12BC3DA700D4E196 /* TransitStation.h */,
+				5F58414B12BC3DA700D4E196 /* TransitStation.m */,
+				5F58414D12BC3E2600D4E196 /* TransitDestination.h */,
+				5F58414E12BC3E2600D4E196 /* TransitDestination.m */,
+				5F58415012BC3E5500D4E196 /* BARTDepartureEstimate.h */,
+				5F58415112BC3E5500D4E196 /* BARTDepartureEstimate.m */,
+				5F58416212BC4CF200D4E196 /* BARTResponseProcessor.h */,
+				5F58416312BC4CF200D4E196 /* BARTResponseProcessor.m */,
+				5F32155912CAB0E100CF58D3 /* StationDeparturePref.h */,
+				5F32155A12CAB0E100CF58D3 /* StationDeparturePref.m */,
+				5F32155C12CAB2D100CF58D3 /* BARTStationsUtil.h */,
+				5F32155D12CAB2D100CF58D3 /* BARTStationsUtil.m */,
+				5F3215F112CABC6300CF58D3 /* StationPrefs.h */,
+				5F3215F212CABC6300CF58D3 /* StationPrefs.m */,
+				5F00F7F212D2B30200C51C92 /* BARTRequestor.h */,
+				5F00F7F312D2B30200C51C92 /* BARTRequestor.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		5FBCC2DF12F6481A00773293 /* DepartureExpansionView */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCC2A812F6451F00773293 /* DepartureExpansionView.xib */,
+				5FBCC2E012F6488600773293 /* DetailsExpansionView.h */,
+				5FBCC2E112F6488600773293 /* DetailsExpansionView.m */,
+			);
+			name = DepartureExpansionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* quickbart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "quickbart" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = quickbart;
+			productName = quickbart;
+			productReference = 1D6058910D05DD3D006BFB54 /* quickbart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "quickbart" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* quickbart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280E754E0DD40C5E005A515E /* DeparturesGrid.xib in Resources */,
+				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
+				5F9C6EF512BDBE7800C6B91E /* etd-NBRK.xml in Resources */,
+				5F5717EE12BE875300676EA7 /* Icon.png in Resources */,
+				5F5717EF12BE875300676EA7 /* Icon@2x.png in Resources */,
+				5F32149512CA701E00CF58D3 /* StationPickerVC.xib in Resources */,
+				5F32155212CAAFD700CF58D3 /* StationEditorVC.xib in Resources */,
+				5FC1128712D931200044AB1D /* train_icons in Resources */,
+				5F9C782212EBE4A40057BDDE /* NoDeparturesPlaceholderView.xib in Resources */,
+				5FBCC2A912F6451F00773293 /* DepartureExpansionView.xib in Resources */,
+				5FBCC4DD12F733E400773293 /* etd-ALL.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				289233AE0DB2D0DB0083E9F9 /* DeparturesGridVC.m in Sources */,
+				5F58414C12BC3DA700D4E196 /* TransitStation.m in Sources */,
+				5F58414F12BC3E2600D4E196 /* TransitDestination.m in Sources */,
+				5F58415212BC3E5500D4E196 /* BARTDepartureEstimate.m in Sources */,
+				5F58416412BC4CF200D4E196 /* BARTResponseProcessor.m in Sources */,
+				5F32149412CA701E00CF58D3 /* StationPickerVC.m in Sources */,
+				5F32155112CAAFD700CF58D3 /* StationEditorVC.m in Sources */,
+				5F32155B12CAB0E100CF58D3 /* StationDeparturePref.m in Sources */,
+				5F32155E12CAB2D100CF58D3 /* BARTStationsUtil.m in Sources */,
+				5F3215F312CABC6300CF58D3 /* StationPrefs.m in Sources */,
+				5FD267FA12CC33F8004ECBA8 /* DepartureSummaryView.m in Sources */,
+				5FBD28EC12CED351009277C0 /* SliderDisplayControl.m in Sources */,
+				5F00F7F412D2B30200C51C92 /* BARTRequestor.m in Sources */,
+				5FC112F712D937840044AB1D /* TrainDepartureView.m in Sources */,
+				5FF9396E12DD4F400039C7B7 /* DepartureDetailDataSource.m in Sources */,
+				5FBCC2E212F6488600773293 /* DetailsExpansionView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = quickbart_Prefix.pch;
+				INFOPLIST_FILE = "quickbart-Info.plist";
+				PRODUCT_NAME = quickbart;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = quickbart_Prefix.pch;
+				INFOPLIST_FILE = "quickbart-Info.plist";
+				PRODUCT_NAME = quickbart;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "quickbart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "quickbart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
